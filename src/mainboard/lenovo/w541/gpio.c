@@ -27,28 +27,20 @@ static const struct pch_gpio_set1 pch_gpio_set1_mode = {
 	.gpio6 = GPIO_MODE_GPIO,
 	.gpio7 = GPIO_MODE_GPIO,
 	.gpio8 = GPIO_MODE_GPIO,
-	.gpio9 = GPIO_MODE_NATIVE,
 	.gpio10 = GPIO_MODE_GPIO,
 	.gpio11 = GPIO_MODE_GPIO,
-	.gpio12 = GPIO_MODE_NATIVE,
 	.gpio13 = GPIO_MODE_GPIO,
 	.gpio14 = GPIO_MODE_GPIO,
 	.gpio15 = GPIO_MODE_GPIO,
 	.gpio16 = GPIO_MODE_GPIO,
 	.gpio17 = GPIO_MODE_GPIO,
-	.gpio18 = GPIO_MODE_NATIVE,
 	.gpio19 = GPIO_MODE_GPIO,
-	.gpio20 = GPIO_MODE_NATIVE,
 	.gpio21 = GPIO_MODE_GPIO,
 	.gpio22 = GPIO_MODE_GPIO,
 	.gpio23 = GPIO_MODE_GPIO,
 	.gpio24 = GPIO_MODE_GPIO,
-	.gpio25 = GPIO_MODE_NATIVE,
-	.gpio26 = GPIO_MODE_NATIVE,
 	.gpio27 = GPIO_MODE_GPIO,
 	.gpio28 = GPIO_MODE_GPIO,
-	.gpio29 = GPIO_MODE_NATIVE,
-	.gpio30 = GPIO_MODE_NATIVE,
 	.gpio31 = GPIO_MODE_GPIO,
 };
 
@@ -104,7 +96,6 @@ static const struct pch_gpio_set1 pch_gpio_set1_blink = {
 };
 
 static const struct pch_gpio_set2 pch_gpio_set2_mode = {
-	.gpio32 = GPIO_MODE_NATIVE,
 	.gpio33 = GPIO_MODE_GPIO,
 	.gpio34 = GPIO_MODE_GPIO,
 	.gpio35 = GPIO_MODE_GPIO,
@@ -112,16 +103,12 @@ static const struct pch_gpio_set2 pch_gpio_set2_mode = {
 	.gpio37 = GPIO_MODE_GPIO,
 	.gpio38 = GPIO_MODE_GPIO,
 	.gpio39 = GPIO_MODE_GPIO,
-	.gpio40 = GPIO_MODE_NATIVE,
-	.gpio41 = GPIO_MODE_NATIVE,
 	.gpio42 = GPIO_MODE_GPIO,
 	.gpio43 = GPIO_MODE_GPIO,
 	.gpio44 = GPIO_MODE_GPIO,
 	.gpio45 = GPIO_MODE_GPIO,
 	.gpio46 = GPIO_MODE_GPIO,
-	.gpio47 = GPIO_MODE_NATIVE,
 	.gpio48 = GPIO_MODE_GPIO,
-	.gpio49 = GPIO_MODE_NATIVE,
 	.gpio50 = GPIO_MODE_GPIO,
 	.gpio51 = GPIO_MODE_GPIO,
 	.gpio52 = GPIO_MODE_GPIO,
@@ -130,12 +117,6 @@ static const struct pch_gpio_set2 pch_gpio_set2_mode = {
 	.gpio55 = GPIO_MODE_GPIO,
 	.gpio56 = GPIO_MODE_GPIO,
 	.gpio57 = GPIO_MODE_GPIO,
-	.gpio58 = GPIO_MODE_NATIVE,
-	.gpio59 = GPIO_MODE_NATIVE,
-	.gpio60 = GPIO_MODE_NATIVE,
-	.gpio61 = GPIO_MODE_NATIVE,
-	.gpio62 = GPIO_MODE_NATIVE,
-	.gpio63 = GPIO_MODE_NATIVE,
 };
 
 static const struct pch_gpio_set2 pch_gpio_set2_direction = {
@@ -181,10 +162,6 @@ static const struct pch_gpio_set3 pch_gpio_set3_mode = {
 	.gpio69 = GPIO_MODE_GPIO,
 	.gpio70 = GPIO_MODE_GPIO,
 	.gpio71 = GPIO_MODE_GPIO,
-	.gpio72 = GPIO_MODE_NATIVE,
-	.gpio73 = GPIO_MODE_NATIVE,
-	.gpio74 = GPIO_MODE_NATIVE,
-	.gpio75 = GPIO_MODE_NATIVE,
 };
 
 static const struct pch_gpio_set3 pch_gpio_set3_direction = {
