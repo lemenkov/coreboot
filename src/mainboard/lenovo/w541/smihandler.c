@@ -27,11 +27,6 @@
 /* FIXME: check this */
 #define GPE_EC_WAKE	13
 
-int mainboard_io_trap_handler(int smif)
-{
-	return 0;
-}
-
 static void mainboard_smi_handle_ec_sci(void)
 {
 	u8 status = inb(EC_SC);
