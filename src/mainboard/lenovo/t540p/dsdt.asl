@@ -28,7 +28,6 @@ DefinitionBlock(
 	0x20141018	// OEM revision
 )
 {
-	/* Some generic macros */
 	#include "acpi/platform.asl"
 	#include <cpu/intel/common/acpi/cpu.asl>
 	#include <southbridge/intel/lynxpoint/acpi/platform.asl>
