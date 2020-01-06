@@ -75,8 +75,7 @@ chip northbridge/intel/haswell # FIXME: check gfx.ndid and gfx.did
 				chip ec/lenovo/pmh7
 					register "backlight_enable" = "0x01"
 					register "dock_event_enable" = "0x01"
-					device pnp ff.1 on # dummy
-					end
+					device pnp ff.1 on end # dummy
 				end
 				chip ec/lenovo/h8 # FIXME: has_keyboard_backlight, has_power_management_beeps, has_uwb
 					register "beepmask0" = "0x00"
