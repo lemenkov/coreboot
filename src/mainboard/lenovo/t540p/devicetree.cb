@@ -36,7 +36,6 @@ chip northbridge/intel/haswell
 		chip southbridge/intel/lynxpoint # Intel Series 8 Lynx Point PCH
 			register "gen1_dec" = "0x007c1601"
 			register "gen2_dec" = "0x000c15e1"
-			register "gen3_dec" = "0x00000000"
 			register "gen4_dec" = "0x000c06a1"
 			register "gpi13_routing" = "2"
 			register "gpi1_routing" = "2"
