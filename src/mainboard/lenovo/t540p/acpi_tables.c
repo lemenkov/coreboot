@@ -17,7 +17,7 @@
 
 #include <southbridge/intel/lynxpoint/nvs.h>
 
-/* FIXME: check this function.  */
+/* FIXME: check this function. */
 void acpi_create_gnvs(global_nvs_t *gnvs)
 {
 	// the lid is open by default.
