@@ -1,2 +1,4 @@
 Category: laptop
-FIXME: put ROM package, ROM socketed, ROM protocol, Flashrom support, Release year
+FIXME: put ROM package, ROM socketed, ROM protocol, Flashrom support
+Board URL: https://www.lenovo.com/us/en/laptops/thinkpad/t-series/t540p/
+Release year: 2013
