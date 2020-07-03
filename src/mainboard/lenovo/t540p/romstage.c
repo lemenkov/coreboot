@@ -1,11 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 
 #include <stdint.h>
-#include <cpu/intel/haswell/haswell.h>
 #include <northbridge/intel/haswell/haswell.h>
-#include <northbridge/intel/haswell/pei_data.h>
 #include <northbridge/intel/haswell/raminit.h>
-#include <southbridge/intel/common/gpio.h>
 #include <southbridge/intel/lynxpoint/pch.h>
 
 void mainboard_config_rcba(void)
@@ -22,7 +19,6 @@ void mainboard_config_rcba(void)
 
 void mainboard_fill_pei_data(struct pei_data *pei_data)
 {
-	pei_data->system_type = 0; /* Mobile */
 	pei_data->spd_addresses = { 0xa0, 0, 0xa2, 0 };
 	pei_data->ec_present = 1;
 	pei_data->gbe_enable = 1;
