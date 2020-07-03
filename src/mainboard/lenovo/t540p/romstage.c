@@ -18,8 +18,6 @@ static const struct rcba_config_instruction rcba_config[] = {
 	RCBA_SET_REG_16(D22IR, DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA)),
 	RCBA_SET_REG_16(D20IR, DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA)),
 
-	RCBA_RMW_REG_32(FD, ~0, PCH_DISABLE_ALWAYS),
-
 	RCBA_END_CONFIG,
 };
 
