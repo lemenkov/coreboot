@@ -8,17 +8,16 @@
 #include <southbridge/intel/common/gpio.h>
 #include <southbridge/intel/lynxpoint/pch.h>
 
-static const struct rcba_config_instruction rcba_config[] = {
-	RCBA_SET_REG_16(D31IR, DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA)),
-	RCBA_SET_REG_16(D29IR, DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA)),
-	RCBA_SET_REG_16(D28IR, DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA)),
-	RCBA_SET_REG_16(D27IR, DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA)),
-	RCBA_SET_REG_16(D26IR, DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA)),
-	RCBA_SET_REG_16(D25IR, DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA)),
-	RCBA_SET_REG_16(D22IR, DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA)),
-	RCBA_SET_REG_16(D20IR, DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA)),
-
-	RCBA_END_CONFIG,
+void mainboard_config_rcba(void)
+{
+	RCBA16(D31IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
+	RCBA16(D29IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
+	RCBA16(D28IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
+	RCBA16(D27IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
+	RCBA16(D26IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
+	RCBA16(D25IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
+	RCBA16(D22IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
+	RCBA16(D20IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
 };
 
 void mainboard_romstage_entry(void)
@@ -74,7 +73,6 @@ void mainboard_romstage_entry(void)
 	struct romstage_params romstage_params = {
 		.pei_data = &pei_data,
 		.gpio_map = &mainboard_gpio_map,
-		.rcba_config = rcba_config,
 	};
 
 	romstage_common(&romstage_params);
