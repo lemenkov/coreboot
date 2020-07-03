@@ -16,12 +16,17 @@ void mainboard_config_rcba(void)
 	RCBA16(D22IR) = DIR_ROUTE(PIRQA, PIRQB, PIRQC, PIRQD);
 	RCBA16(D20IR) = DIR_ROUTE(PIRQA, PIRQB, PIRQC, PIRQD);
 }
+
+void mb_get_spd_map(uint8_t spd_map[4])
+{
+	spd_map[0] = 0xa0;
+	spd_map[1] = 0xa2;
+	spd_map[2] = 0xa4;
+	spd_map[3] = 0xa6;
+}
+
 void mainboard_fill_pei_data(struct pei_data *pei_data)
 {
-	pei_data->spd_addresses[0] = 0xa0;
-	pei_data->spd_addresses[1] = 0xa2;
-	pei_data->spd_addresses[2] = 0xa4;
-	pei_data->spd_addresses[3] = 0xa6;
 	pei_data->ec_present = 0;
 	pei_data->gbe_enable = 0; /* FIXME: check this */
 
