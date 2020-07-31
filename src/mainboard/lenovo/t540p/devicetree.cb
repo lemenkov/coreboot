@@ -89,18 +89,7 @@ chip northbridge/intel/haswell
 				end
 			end
 			device pci 1f.2 on end # SATA Controller 1
-			device pci 1f.3 on # SMBus
-				chip drivers/i2c/at24rf08c # eeprom, 8 virtual devices, same chip
-					device i2c 54 on end
-					device i2c 55 on end
-					device i2c 56 on end
-					device i2c 57 on end
-					device i2c 5c on end
-					device i2c 5d on end
-					device i2c 5e on end
-					device i2c 5f on end
-				end
-			end
+			device pci 1f.3 on end # SMBus
 			device pci 1f.5 off end # SATA Controller 2
 			device pci 1f.6 off end # Thermal
 		end
