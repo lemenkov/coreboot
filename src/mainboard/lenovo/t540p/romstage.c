@@ -15,7 +15,7 @@ void mainboard_config_rcba(void)
 	RCBA16(D25IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
 	RCBA16(D22IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
 	RCBA16(D20IR) = DIR_ROUTE(PIRQA, PIRQA, PIRQA, PIRQA);
-};
+}
 
 void mb_get_spd_map(uint8_t spd_map[4])
 {
